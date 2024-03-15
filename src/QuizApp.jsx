@@ -45,14 +45,16 @@ const QuizApp = () => {
         window.location.reload();
     };
 
+    // "hello muzamil"
     return (
-        <div className="container bg-gray-400 rounded-3xl  shadow-2xl w-2/4 p-20 m-40 mx-auto">
+        <div className="container bg-gray-400 rounded-3xl shadow-2xl w-2/4 p-20 m-40 mx-auto">
             {
                 showScore ? (
                     <div className="text-center p-6">
                         <h1 className='text-3xl italic font-bold'>Your Score: {score} out of {questions.length}</h1>
                         <button
-                            className="bg-blue-500 text-xl tracking-widest hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+                            className="bg-blue-500 text-xl tracking-widest hover:bg-blue-700 text-white font-bold py-2 px-4 
+                            rounded mt-4"
                             onClick={handleReload}
                         >
                             Restart Quiz
