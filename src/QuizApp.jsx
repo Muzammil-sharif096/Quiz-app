@@ -72,10 +72,10 @@ const QuizApp = () => {
         <>
             <div className="min-h-screen flex items-center justify-center p-4 animate-backgroundChange">
                 <div className="container bg-white rounded-2xl shadow-2xl w-full max-w-xl p-6 md:p-10 lg:p-16 mx-auto">
-                    <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 animate-bounce">Quiz App</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold text-center mb-6  italic animate-bounce">Quiz App</h1>
                     {showScore ? (
                         <div className="text-center p-6">
-                            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800">Your Score: {score} / {questions.length}</h1>
+                            <h1 className="text-3xl md:text-4xl italic font-extrabold text-gray-800">Your Score: {score} / {questions.length}</h1>
                             <button
                                 className="bg-blue-500 mt-8 w-full text-lg md:text-xl hover:bg-blue-700 transition-colors duration-300 text-white font-bold py-3 px-6 rounded-full shadow-lg"
                                 onClick={handleReload}
@@ -85,7 +85,7 @@ const QuizApp = () => {
                         </div>
                     ) : (
                         <div>
-                            <div className="text-center my-6 md:my-8">
+                            <div className="text-center italic my-6 md:my-8">
                                 <h1 className="text-2xl md:text-3xl font-semibold text-black mb-2">{questions[newQuestion].question}</h1>
                                 <div className="text-lg md:text-xl font-semibold text-red-600 mb-4">Time left: {timeLeft} seconds</div>
                             </div>
