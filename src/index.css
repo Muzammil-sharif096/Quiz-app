@@ -11,6 +11,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes backgroundChange {
+  0% {
+    background-color: #3498db;
+    /* Blue */
+  }
+
+  25% {
+    background-color: #2ecc71;
+    /* Green */
+  }
+
+  50% {
+    background-color: #e74c3c;
+    /* Red */
+  }
+
+  75% {
+    background-color: #f1c40f;
+    /* Yellow */
+  }
+
+  100% {
+    background-color: #9b59b6;
+    /* Purple */
+  }
+}
+
+.animate-backgroundChange {
+  animation: backgroundChange 10s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+    /* Adjust the value to control bounce height */
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
